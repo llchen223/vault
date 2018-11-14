@@ -132,7 +132,6 @@ test-ember:
 ember-dist:
 	@echo "--> Installing JavaScript assets"
 	@cd ui && yarn
-	@cd ui && npm rebuild node-sass
 	@echo "--> Building Ember application"
 	@cd ui && yarn run build
 	@rm -rf ui/if-you-need-to-delete-this-open-an-issue-async-disk-cache
@@ -140,7 +139,6 @@ ember-dist:
 ember-dist-dev:
 	@echo "--> Installing JavaScript assets"
 	@cd ui && yarn
-	@cd ui && npm rebuild node-sass
 	@echo "--> Building Ember application"
 	@cd ui && yarn run build-dev
 
